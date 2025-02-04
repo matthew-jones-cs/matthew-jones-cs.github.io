@@ -32,7 +32,8 @@ img
     max-height: 700px;
     align-items: center;
     object-fit: cover;
-    margin: auto, auto;
+    margin: auto;
+    display: block;
 }
 
 li
