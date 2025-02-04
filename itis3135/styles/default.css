@@ -25,9 +25,13 @@ a:visited
     color: #EDB183;
 }
 
-figure
+img
 {
-    padding: 50px 50px;
+    width: 100%;
+    max-width: 500px;
+    max-height: 700px;
+    align-items: center;
+    object-fit: cover;
 }
 
 figcaption
