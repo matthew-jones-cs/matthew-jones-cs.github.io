@@ -30,6 +30,11 @@ figure
     padding: 50px 50px;
 }
 
+figcaption
+{
+    font-style: italic;
+}
+
 
 @media (min-width: 600px)
 {
