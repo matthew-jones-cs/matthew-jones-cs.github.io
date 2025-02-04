@@ -35,6 +35,11 @@ img
     margin: auto, 25%;
 }
 
+li
+{
+    margin: 30px auto;
+}
+
 figcaption
 {
     font-style: italic;
