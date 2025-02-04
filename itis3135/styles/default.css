@@ -9,6 +9,7 @@ body
     background-color: #3A2E39;
 }
 
+
 h1, h2, h3
 {
     font-family: sans-serif;
@@ -22,6 +23,11 @@ a
 a:visited
 {
     color: #EDB183;
+}
+
+figure
+{
+    padding: 50px 50px;
 }
 
 
