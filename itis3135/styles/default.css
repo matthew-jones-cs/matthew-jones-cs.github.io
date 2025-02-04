@@ -1,12 +1,17 @@
 html
 {
-    font-family: Georgia, Impact;
+    font-family: Georgia, Impact, sans-serif;
     color: #F4D8CD;
 }
 
 body
 {
     background-color: #3A2E39;
+}
+
+h1, h2, h3
+{
+    font-family: sans-serif;
 }
 
 a
