@@ -34,6 +34,7 @@ img
     object-fit: cover;
     margin: auto;
     display: block;
+    border: 3px solid #F15152;
 }
 
 li
