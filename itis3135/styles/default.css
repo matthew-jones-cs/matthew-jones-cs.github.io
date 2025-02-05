@@ -34,7 +34,7 @@ img
     object-fit: cover;
     margin: auto;
     display: block;
-    border: 3px solid #F15152;
+    /*border: 3px solid #F15152;*/  /* This is commented out because it makes accumulus give a warning*/
 }
 
 li
