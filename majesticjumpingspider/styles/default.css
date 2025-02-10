@@ -1,24 +1,30 @@
 html
 {
     font-family: Georgia, Impact, sans-serif;
-    color: #DAF7DC;
+    color: #E8DCB9;
 }
 
 body
 {
-    background-color: #2F4858;
+    background-color: #334D5C;
 }
 
 
 h1, h2, h3
 {
     font-family: sans-serif;
+    color: #F0E8D1;
 }
 
 a
 {
     text-decoration: none;
     color: #9EE493;
+}
+
+p
+{
+    text-align: center;
 }
 
 a:visited
@@ -31,6 +37,25 @@ a:visited
 {
     display: inline;
     padding: min(5%, 20px);
+}
+
+header
+{
+    height: max(30px, 10%);
+    padding: min(5px, 3.3333%)
+}
+
+body
+{
+    height: max(240px, 80%);
+    padding: (5px, 3.3333%);
+}
+
+
+footer
+{
+    height: max(30px, 10%);
+    padding: (5px, 3.3333%);
 }
 
 
