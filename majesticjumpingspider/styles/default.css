@@ -1,0 +1,55 @@
+html
+{
+    font-family: Georgia, Impact, sans-serif;
+    color: #DAF7DC;
+}
+
+body
+{
+    background-color: #2F4858;
+}
+
+
+h1, h2, h3
+{
+    font-family: sans-serif;
+}
+
+a
+{
+    text-decoration: none;
+    color: #9EE493;
+}
+
+a:visited
+{
+    color: #86BBD8;
+}
+
+
+.horizontal-list > li
+{
+    display: inline;
+    padding: min(5%, 20px);
+}
+
+
+@media (min-width: 600px)
+{
+
+}
+
+@media (min-width: 800px)
+{
+    
+}
+
+@media (min-width: 1000px)
+{
+    
+}
+
+@media (min-width: 1200px)
+{
+    
+}
