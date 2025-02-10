@@ -42,6 +42,12 @@ li
     margin: 30px auto;
 }
 
+.horizontal-list > li
+{
+    display: inline;
+    padding: min(5%, 30px);
+}
+
 figcaption
 {
     font-style: italic;
