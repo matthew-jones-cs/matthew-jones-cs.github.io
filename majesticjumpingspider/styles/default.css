@@ -16,15 +16,15 @@ h1, h2, h3
     color: #F0E8D1;
 }
 
+h1
+{
+    text-align: center;
+}
+
 a
 {
     text-decoration: none;
     color: #9EE493;
-}
-
-p
-{
-    text-align: center;
 }
 
 a:visited
@@ -32,6 +32,10 @@ a:visited
     color: #86BBD8;
 }
 
+p
+{
+    text-align: center;
+}
 
 .horizontal-list > li
 {
@@ -42,22 +46,26 @@ a:visited
 header
 {
     height: max(30px, 10%);
-    padding: min(5px, 3.3333%)
+    padding: min(5px, 3%)
 }
 
 body
 {
     height: max(240px, 80%);
-    padding: (5px, 3.3333%);
+    padding: (5px, 3%);
 }
 
 
 footer
 {
     height: max(30px, 10%);
-    padding: (5px, 3.3333%);
+    padding: (5px, 3%);
 }
 
+footer > p
+{
+    color: #F0E8D1;
+}
 
 @media (min-width: 600px)
 {
