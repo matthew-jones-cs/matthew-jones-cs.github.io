@@ -1,0 +1,77 @@
+/*https://coolors.co/e54b4b-2e86ab-f7ebe8-444140-C2C1D7*/
+html
+{
+    font-family: Georgia, Impact, sans-serif;
+    color: #f7ebe8;
+}
+
+body
+{
+    background-color: #444140;
+}
+
+
+h1, h2, h3
+{
+    font-family: sans-serif;
+}
+
+a
+{
+    text-decoration: none;
+    color: #C2C1D7;
+}
+
+a:hover
+{
+    color: #2e86ab;
+}
+
+img
+{
+    width: 100%;
+    max-width: 500px;
+    max-height: 700px;
+    align-items: center;
+    object-fit: cover;
+    margin: auto;
+    display: block;
+    /*border: 3px solid #F15152;*/  /* This is commented out because it makes accumulus give a warning*/
+}
+
+li
+{
+    margin: 30px auto;
+}
+
+.horizontal-list > li
+{
+    display: inline;
+    padding: min(5%, 30px);
+}
+
+figcaption
+{
+    font-style: italic;
+}
+
+
+@media (min-width: 600px)
+{
+
+}
+
+@media (min-width: 800px)
+{
+    
+}
+
+@media (min-width: 1000px)
+{
+    
+}
+
+@media (min-width: 1200px)
+{
+    
+}
