@@ -43,7 +43,7 @@ p
 header
 {
     height: max(30px, 10%);
-    padding: min(5px, 3%)
+    padding: min(5px, 3%);
 }
 
 body
@@ -57,6 +57,7 @@ footer
 {
     height: max(30px, 10%);
     padding: min(5px, 3%);
+    
 }
 
 footer > p
