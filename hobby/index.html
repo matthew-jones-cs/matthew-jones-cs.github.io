@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+        <title>Cool Rock Collection Hobby</title>
+        <style>
+
+            nav
+            {
+                position: absolute;
+                top: 0;
+                left: 50vw;
+                display: inline;
+                align-items:center;
+                z-index: 1;
+            }
+
+            .who
+            {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 50vh;
+                background-color: green;
+                display: none;
+                z-index: 0;
+            }
+            .what
+            {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 50vh;
+                background-color: blue;
+                display: none;
+                z-index: 0;
+            }
+            .when
+            {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: none;
+                z-index: 0;
+            }
+            .where
+            {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: none;
+                z-index: 0;
+            }
+            .why
+            {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: none;
+                z-index: 0;
+            }
+            .how
+            {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: none;
+                z-index: 0;
+            }
+
+            
+        </style>
+        
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1>Cool Rock Collecting</h1>
+                <nav>
+                    <a href="#who" id="who_b">Who</a>
+                    <a href="#what" id="what_b">What</a>
+                    <a href="#when" id="when_b">When</a>
+                    <a href="#where" id="where_b">Where</a>
+                    <a href="#why" id="why_b">Why</a>
+                    <a href="#how" id="how_b">How</a>
+                </nav>
+                
+            </header>
+            <section class="who" id="who">
+                <h2>My name My name</h2>
+                <p></p>
+                <p></p>
+                <figure>
+                    <img></img>
+                    <figcaption></figcaption>
+                </figure>
+            </section>
+            <section class="what" id="what">
+                <h2>No  No</h2>
+                <p></p>
+                <p></p>
+                <figure>
+                    <img></img>
+                    <figcaption></figcaption>
+                </figure>
+            </section>
+            <section class="when" id="when">
+                <h2></h2>
+                <p></p>
+                <p></p>
+                <figure>
+                    <img></img>
+                    <figcaption></figcaption>
+                </figure>
+            </section>
+            <section class="where" id="where">
+                <h2></h2>
+                <p></p>
+                <p></p>
+                <figure>
+                    <img></img>
+                    <figcaption></figcaption>
+                </figure>
+            </section>
+            <section class="why" id="why">
+                <h2></h2>
+                <p></p>
+                <p></p>
+                <figure>
+                    <img></img>
+                    <figcaption></figcaption>
+                </figure>
+            </section>
+            <section class="how" id="how">
+                <h2></h2>
+                <p></p>
+                <p></p>
+                <figure>
+                    <img></img>
+                    <figcaption></figcaption>
+                </figure>
+            </section>
+            <script>
+
+                const e1 = document.getElementById("who_b");
+                const e2 = document.getElementById("what_b");
+                const e3 = document.getElementById("when_b");
+                const e4 = document.getElementById("where_b");
+                const e5 = document.getElementById("why_b");
+                const e6 = document.getElementById("how_b");
+
+                let display = 1;
+                const pageClass = ["who", "what", "when", "where", "why", "how"];
+
+                function changeVisability(nPage)
+                {
+                    document.getElementById(pageClass[display]).style.display = "none";
+                    document.getElementById(pageClass[nPage]).style.display = "inline";
+                    display = nPage;
+                }
+
+                e1.addEventListener("click", function() {changeVisability(0);});
+                e2.addEventListener("click", function() {changeVisability(1);});
+                e3.addEventListener("click", function() {changeVisability(2);});
+                e4.addEventListener("click", function() {changeVisability(3);});
+                e5.addEventListener("click", function() {changeVisability(4);});
+                e6.addEventListener("click", function() {changeVisability(5);});
+                
+            </script>
+        </main>
+        <footer>
+            
+        </footer>
+    </body>
+</html>

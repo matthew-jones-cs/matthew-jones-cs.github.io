@@ -1,0 +1,39 @@
+body
+{
+    border: 90% -20px 3vw 5px;
+    border-radius: 50%;
+    border-color: antiquewhite;
+    border-width: 50px;
+}
+
+p
+{
+    font-size: 100px;
+    font-family: "papyrus";
+    text-align: center;
+}
+
+
+ul
+{
+    display: inline;
+    align-items: center;
+    font-family: "Comic Sans MS";
+}
+
+
+a
+{
+
+    margin-top: 5vh;
+    margin-left: 20vh;
+    margin-right: 5%;
+    margin-bottom: 0;
+    font-family: "Times New Roman";
+}
+
+.ugly
+{
+    border-top: 10px;
+    
+}
