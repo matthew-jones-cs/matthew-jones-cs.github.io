@@ -6,42 +6,60 @@
         <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
         <title>Cool Rock Collection Hobby</title>
         <style>
+            
+            header
+            {
+                z-index: 1;
+            }
+
+            h1
+            {
+                margin: 0 auto;
+                text-align: center;
+                color: #472D30;
+            }
 
             nav
             {
-                position: absolute;
-                top: 0;
-                left: 50vw;
-                display: inline;
-                align-items:center;
-                z-index: 1;
+                margin-top: 0;
+                margin-left: 30px;
+                margin-right: 30px;
+                margin-bottom: 0;
+                height: 30px;
+                background-color: #C9CBA3;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                box-shadow: 2px 2px #086677;
+            }
+
+            .inNav
+            {
+                color: #DC602E;
+                margin: 0;
+                box-shadow: none;
+                padding: 0;
             }
 
             .who
             {
-                position: fixed;
+                position: relative;
                 top: 0;
                 left: 0;
-                width: 100vw;
-                height: 50vh;
-                background-color: green;
                 display: none;
                 z-index: 0;
             }
             .what
             {
-                position: fixed;
+                position: relative;
                 top: 0;
                 left: 0;
-                width: 100vw;
-                height: 50vh;
-                background-color: lightblue;
                 display: none;
                 z-index: 0;
             }
             .when
             {
-                position: absolute;
+                position: relative;
                 top: 0;
                 left: 0;
                 display: none;
@@ -49,7 +67,7 @@
             }
             .where
             {
-                position: absolute;
+                position: relative;
                 top: 0;
                 left: 0;
                 display: none;
@@ -57,7 +75,7 @@
             }
             .why
             {
-                position: absolute;
+                position: relative;
                 top: 0;
                 left: 0;
                 display: none;
@@ -65,14 +83,64 @@
             }
             .how
             {
-                position: absolute;
+                position: relative;
                 top: 0;
                 left: 0;
                 display: none;
                 z-index: 0;
             }
 
-            
+            body
+            {
+                background-color: #FFE1A8;
+                margin: 0;
+            }
+
+            h2
+            {
+                margin-left: 10px;;
+                color: #472D30;
+            }
+
+            a
+            {
+                text-decoration: none;
+                color: #DC602E;
+            }
+
+            a:hover
+            {
+                color: #E26D5C;
+            }
+
+            p
+            {
+                padding-top: 7px;
+                padding-bottom: 7px;
+                padding-left: 7px;
+                padding-right: 7px;
+                background-color: #C9CBA3;
+                margin-left: 40px;
+                margin-right: 40px;
+                color: #BC412B;
+                box-shadow: 2px 2px #086677;
+            }
+
+            img
+            {
+                display: flex;
+                margin: auto;
+                max-width: 500px;
+                border: solid 3px #086677;
+            }
+
+            @media (max-width: 2700px)
+            {
+                nav
+                {
+
+                }
+            }
         </style>
         
     </head>
@@ -82,65 +150,69 @@
                 <h1>Cool Rock Collecting</h1>
                 <nav>
                     <a href="#who" id="who_b">Who</a>
+                    <p class="inNav">()</p>
                     <a href="#what" id="what_b">What</a>
+                    <p class="inNav">()</p>
                     <a href="#when" id="when_b">When</a>
+                    <p class="inNav">()</p>
                     <a href="#where" id="where_b">Where</a>
+                    <p class="inNav">()</p>
                     <a href="#why" id="why_b">Why</a>
+                    <p class="inNav">()</p>
                     <a href="#how" id="how_b">How</a>
                 </nav>
-                
             </header>
             <section class="who" id="who">
-                <h2>My name My name</h2>
+                <h2>Who</h2>
                 <p></p>
                 <p></p>
                 <figure>
-                    <img></img>
+                    <img src="" alt="">
                     <figcaption></figcaption>
                 </figure>
             </section>
             <section class="what" id="what">
-                <h2>No  No</h2>
+                <h2>What</h2>
                 <p></p>
                 <p></p>
                 <figure>
-                    <img></img>
+                    <img src="./images/CoolRockOne.JPG" alt="Cool rock one in my hand">
                     <figcaption></figcaption>
                 </figure>
             </section>
             <section class="when" id="when">
-                <h2></h2>
+                <h2>When</h2>
                 <p></p>
                 <p></p>
                 <figure>
-                    <img></img>
+                    <img src="" alt="">
                     <figcaption></figcaption>
                 </figure>
             </section>
             <section class="where" id="where">
-                <h2></h2>
+                <h2>Where</h2>
                 <p></p>
                 <p></p>
                 <figure>
-                    <img></img>
+                    <img src="" alt="">
                     <figcaption></figcaption>
                 </figure>
             </section>
             <section class="why" id="why">
-                <h2></h2>
+                <h2>Why</h2>
                 <p></p>
                 <p></p>
                 <figure>
-                    <img></img>
+                    <img src="" alt="">
                     <figcaption></figcaption>
                 </figure>
             </section>
             <section class="how" id="how">
-                <h2></h2>
+                <h2>How</h2>
                 <p></p>
                 <p></p>
                 <figure>
-                    <img></img>
+                    <img src="" alt="">
                     <figcaption></figcaption>
                 </figure>
             </section>
@@ -169,6 +241,7 @@
                 e4.addEventListener("click", function() {changeVisability(3);});
                 e5.addEventListener("click", function() {changeVisability(4);});
                 e6.addEventListener("click", function() {changeVisability(5);});
+                changeVisability(1);
                 
             </script>
         </main>
