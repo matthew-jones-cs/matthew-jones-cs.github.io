@@ -34,6 +34,12 @@ a
 
 .ugly
 {
-    border-top: 10px;
-    
+    border-top: 10px solid #60E1E0;
+    border-left: 30px solid #F26419;
+    border-right: 1px solid #F8F8F8;
+    border-bottom: 50px solid #F7AEF8;
+    border-radius: 0% 10% 50% 5%;
+    font-size: 30px;
+    margin-left: 30vw;
+    margin-right: 30vw;;
 }
