@@ -69,7 +69,7 @@
                 position: relative;
                 top: 0;
                 left: 0;
-                display: none;
+                display: inline;
                 z-index: 0;
             }
             .when
@@ -197,7 +197,7 @@
         <main>
             <header>
                 <h1>Cool Rock Collecting</h1>
-                <nav>
+                <nav id="contains">
                     <a href="#who" id="who_b">Who</a>
                     <p class="inNav">()</p>
                     <a href="#what" id="what_b">What</a>
@@ -220,7 +220,7 @@
                     <figcaption>This is a cool rock I found in a creek.</figcaption>
                 </figure>
             </section>
-            <section class="what" id="what">
+            <section id="what">
                 <h2>What?</h2>
                 <p>What is this hobby? What is cool rock collecting? Well cool rock collecting is what it sound like. You look for cool rocks, and if you find one, and you are allowed to take it you take it.</p>
                 <figure>
@@ -267,30 +267,29 @@
             </section>
             <script>
 
-                const e1 = document.getElementById("who_b");
-                const e2 = document.getElementById("what_b");
-                const e3 = document.getElementById("when_b");
-                const e4 = document.getElementById("where_b");
-                const e5 = document.getElementById("why_b");
-                const e6 = document.getElementById("how_b");
+                const e = document.getElementById("contains");
 
                 let display = 1;
                 const pageClass = ["who", "what", "when", "where", "why", "how"];
 
-                function changeVisability(nPage)
+                function changeVisability()
                 {
-                    document.getElementById(pageClass[display]).style.display = "none";
-                    document.getElementById(pageClass[nPage]).style.display = "inline";
-                    display = nPage;
+                    const t = String(event.target.id);
+                    const d = t.slice(0, t.length - 2);
+                    
+                    if(pageClass.includes(d))
+                    {
+                        document.getElementById(pageClass[display]).style.display = "none";
+                        document.getElementById(d).style.display = "inline";
+                        display = pageClass.indexOf(d);
+                    }
+                    else
+                    {
+                        return;
+                    }
                 }
 
-                e1.addEventListener("click", function() {changeVisability(0);});
-                e2.addEventListener("click", function() {changeVisability(1);});
-                e3.addEventListener("click", function() {changeVisability(2);});
-                e4.addEventListener("click", function() {changeVisability(3);});
-                e5.addEventListener("click", function() {changeVisability(4);});
-                e6.addEventListener("click", function() {changeVisability(5);});
-                changeVisability(1);
+                e.addEventListener("click", changeVisability);
                 
             </script>
         </main>
