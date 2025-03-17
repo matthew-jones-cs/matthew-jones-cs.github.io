@@ -220,7 +220,7 @@
                     <figcaption>This is a cool rock I found in a creek.</figcaption>
                 </figure>
             </section>
-            <section id="what">
+            <section class="what" id="what">
                 <h2>What?</h2>
                 <p>What is this hobby? What is cool rock collecting? Well cool rock collecting is what it sound like. You look for cool rocks, and if you find one, and you are allowed to take it you take it.</p>
                 <figure>
@@ -276,7 +276,7 @@
                 {
                     const t = String(event.target.id);
                     const d = t.slice(0, t.length - 2);
-                    
+
                     if(pageClass.includes(d))
                     {
                         document.getElementById(pageClass[display]).style.display = "none";
