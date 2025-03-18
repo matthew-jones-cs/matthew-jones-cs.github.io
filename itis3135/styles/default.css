@@ -48,8 +48,18 @@ li
 
 .horizontal-list > li
 {
+    margin-left: auto;
+    margin-right: auto;
     display: inline;
     padding: min(5%, 30px);
+}
+
+nav
+{
+    padding-top: 7px;
+    padding-bottom: 1px;
+    display: inline;
+    border-bottom: 3px solid #ffd166;
 }
 
 figcaption
