@@ -13,12 +13,18 @@ p
     text-align: center;
 }
 
+li
+{
+    font-family: "Comic Sans MS";
+}
 
 ul
 {
     display: inline;
     align-items: center;
+    text-align: center;
     font-family: "Comic Sans MS";
+    margin: 0 auto;
 }
 
 
