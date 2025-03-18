@@ -20,6 +20,8 @@ h1, h2, h3
 
 a
 {
+    padding-left: 10px;
+    padding-right: 10px;
     text-decoration: none;
     color: #ffd166;
 }
@@ -58,7 +60,7 @@ nav
 {
     padding-top: 7px;
     padding-bottom: 1px;
-    display: inline;
+    text-align: center;
     border-bottom: 3px solid #ffd166;
 }
 
