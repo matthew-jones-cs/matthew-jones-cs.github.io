@@ -14,9 +14,27 @@
                 color: #E0FBFC;
             }
 
+            header
+            {
+                padding: 10px 10px 10px 10px;
+            }
+
             body
             {
+                margin: 10px 5vw 10px 5vw;
                 background-color: #293241;
+            }
+
+            main
+            {
+                background-color: #2a9d8f;
+            }
+
+            p
+            {
+                margin-left: 8px;
+                margin-right: 8px;
+                margin-bottom: 0;
             }
 
             a
@@ -25,20 +43,31 @@
                 color: #E9C46A;
             }
 
+            h2
+            {
+                padding: 4px 4px 4px 4px;
+                margin-top: 3px;
+                text-align: center;
+            }
+
             a:hover
             {
                 color: #EE6C4D;
             }
 
-            h1, header > figure
+            .appearWell
             {
-                display: inline;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
 
-            section
+
+            .inquiry
             {
                 text-align: center;
-                padding: min(50px, 10%);
+                padding: min(10px, auto);
+                padding-bottom: 10px;
             }
 
             .tagline
@@ -52,17 +81,26 @@
                 list-style:upper-roman;
             }
 
+            @media (min-width: 1100px)
+            {
+                main
+                {
+                    width: 1012;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                }
+            }
         </style>
     </head>
 
     <body>
 
         <header>
-            <h1>Jones Inovations</h1>
-            <figure>
+            <div class="appearWell">
+                <h1>Jones Inovations</h1>
                 <img src="images/jones-innovations-logo-s.png" alt="Jones Inovations Logo">
-                <figcaption></figcaption>
-            </figure>
+            </div>
             <nav>
                 <a href="./">Home</a>
             </nav>
@@ -81,9 +119,9 @@
                 <li class="custom-l">Jones Innovations invinted the concept of money</li>
             </ul>
 
-            <section>
+            <div class="inquiry">
                 <p>We would like to design you a website. To inquire for more information can reach us at notreal@JonesInnovations.org, 5555-555-555, or if you are old fashion 99 Curb Lane North Carolina.</p>
-            </section>
+            </div>
         </main>
 
         <footer>
