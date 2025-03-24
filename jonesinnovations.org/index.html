@@ -27,7 +27,9 @@
 
             main
             {
-                background-color: #2a9d8f;
+                padding-left: 5px;
+                padding-right: 5px;
+                padding-bottom: 7px;
             }
 
             p
@@ -81,6 +83,13 @@
                 list-style:upper-roman;
             }
 
+            .border
+            {
+                border: 5px solid #2a9d8f;
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+
             @media (min-width: 1100px)
             {
                 main
@@ -96,7 +105,7 @@
 
     <body>
 
-        <header>
+        <header class="border">
             <div class="appearWell">
                 <h1>Jones Inovations</h1>
                 <img src="images/jones-innovations-logo-s.png" alt="Jones Inovations Logo">
@@ -106,7 +115,7 @@
             </nav>
         </header>
 
-        <main>
+        <main class="border">
             <h2>Jones Innovations Services</h2>
 
             <p>Jones Inovations is a web design business that has existed for 10 months. During this time we have become renound for making websites that are very website like.</p>
@@ -119,12 +128,12 @@
                 <li class="custom-l">Jones Innovations invinted the concept of money</li>
             </ul>
 
-            <div class="inquiry">
+            <div>
                 <p>We would like to design you a website. To inquire for more information can reach us at notreal@JonesInnovations.org, 5555-555-555, or if you are old fashion 99 Curb Lane North Carolina.</p>
             </div>
         </main>
 
-        <footer>
+        <footer class="border">
             <p class="tagline">We were designing before the internet was created.</p>
         </footer>
     </body>
