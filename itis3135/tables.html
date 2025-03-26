@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <title>ITIS3135 | Matthew Jones' | Majestic Jumping Spider | Tables</title>
+        <link rel="stylesheet" href="styles/default.css">
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    </head>
+    
+    <body>
+        <header>
+            <div data-include="components/header.html"></div>
+        </header>
+        <main>
+            <h2>HTML Tables - Whimsical Company</h2>
+            <h3>My Tabular Data</h3>
+            <ol>
+                <li>Jim Plan jplan@solutions.com 1</li>
+                <li>Sam Hair shair@solutions.com 2</li>
+                <li>Heather Flair hflair@solutions.com 3</li>
+                <li>Jack James jjames@solutions.com 4</li>
+                <li>Tracy Dogwood tdogwood@solutions.com 5</li>
+                <li>Kent Smith ksmith@solutions.com 6</li>
+                <li>Clair Stevenson cstevenson@solutions.com 7</li>
+            </ol>
+            <h3>Employee Data in Simple Table</h3>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Years of Service</th>
+                </tr>
+                <tr>
+                    <td>Jim Plan</td>
+                    <td>jplan@solutions.com</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Sam Hair</td>
+                    <td>shair@solutions.com</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Heather Flair</td>
+                    <td>hflair@solutions.com</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Jack James</td>
+                    <td>jjames@solutions.com</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Tracy Dogwood</td>
+                    <td>tdogwood@solutions.com</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Kent Smith</td>
+                    <td>ksmith@solutions.com</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>Clair Stevenson</td>
+                    <td>cstevenson@solutions.com</td>
+                    <td>7</td>
+                </tr>
+            </table>
+
+            <h3>Employee Data in Complex Table</h3>
+            <figure>
+                <table>
+                    <tr>
+                        <th>Category</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Years of Service</th>
+                        <th>Monthly Salary</th>
+                    </tr>
+                    <tr>
+                        <td rowspan = "2" class = "category">Sales</td>
+                        <td>Jim Plan</td>
+                        <td>jplan@solutions.com</td>
+                        <td>1</td>
+                        <td>$.01</td>
+                    </tr>
+                    <tr>
+                        <td>Sam Hair</td>
+                        <td>shair@solutions.com</td>
+                        <td>2</td>
+                        <td>$.01</td>
+                    </tr>
+                    <tr>
+                        <td rowspan = "3" class = "category">Marketing</td>
+                        <td>Heather Flair</td>
+                        <td>hflair@solutions.com</td>
+                        <td>3</td>
+                        <td>$.02</td>
+                    </tr>
+                    <tr>
+                        <td>Jack James</td>
+                        <td>jjames@solutions.com</td>
+                        <td>4</td>
+                        <td>$.02</td>
+                    </tr>
+                    <tr>
+                        <td>Tracy Dogwood</td>
+                        <td>tdogwood@solutions.com</td>
+                        <td>5</td>
+                        <td>$.02</td>
+                    </tr>
+                    <tr>
+                        <td rowspan = "2" class = "category">Bosses</td>
+                        <td>Kent Smith</td>
+                        <td>ksmith@solutions.com</td>
+                        <td>6</td>
+                        <td>$10000000.01</td>
+                    </tr>
+                    <tr>
+                        <td>Clair Stevenson</td>
+                        <td>cstevenson@solutions.com</td>
+                        <td>7</td>
+                        <td>$10000000.01</td>
+                    </tr>
+                    <tr>
+                        <th colspan="3">Total Years of Service</th> 
+                        <td>28 Years</td>
+                        <td>$20000000.1</td>
+                    </tr>
+                </table>
+                <figcaption>Employee information table</figcaption>
+            </figure>
+        </main>
+        <footer>
+            <div data-include="components/footer.html"></div>
+        </footer>
+		<script src="scripts/include.js"></script>
+    </body>
+</html>
