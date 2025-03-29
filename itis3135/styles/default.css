@@ -114,12 +114,12 @@ th, tr, td
 
 tr:nth-child(2n) > td:not(.category)
 {
-    background-color: #9C3848;
+    background-color: #3A5743;
 }
 
 tr:nth-child(2n + 1) > td:not(.category)
 {
-    background-color: #2C5F8C;
+    background-color: #62A0D0;
 }
 
 tr:nth-child(1)
