@@ -13,6 +13,11 @@ h2, h3
     color: #B3DEC1;
 }
 
+html
+{
+    margin: 0;
+}
+
 body
 {
     margin-left: 5vw;
@@ -39,16 +44,20 @@ figcaption
 
 li
 {
-    max-width: 80%;
     overflow: scroll;
 }
 
 @media(min-width: 1200px)
 {
-    body, header
+    body
     {
         width: 1080px;
         margin-left: auto;
         margin-right: auto;
+    }
+    header
+    {
+        padding-left: 120px;
+        padding-right: 120px;
     }
 }
