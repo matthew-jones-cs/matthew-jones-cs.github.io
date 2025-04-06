@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery - Karen T. Jones Photography</title>
+  <link rel="stylesheet" href="styles/default.css" />
+  <script src="scripts/script.js" defer></script>
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <header>
+    <div data-include="components/header.html"></div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Gallery</h2>
+      <p>Explore some of Karen's favorite moments from recent sessions.</p>
+      <div class="gallery_grid">
+        <img src="images/family_1.JPEG" alt="Photo of a family of four." class="lightbox" />
+        <img src="images/family_2.JPEG" alt="Family of five on the ground smiling up at the camera." class="lightbox" />
+        <img src="images/bride_1.JPEG" alt="A bride looking back at the camera (In black an white)." class="lightbox" />
+        <img src="images/flower_1.JPEG" alt="A photo of a flower that is very light pink." class="lightbox" />
+        <img src="images/kids_1.JPEG" alt="Two kids on a sofa, outside." class="lightbox" />
+        <img src="images/bride_2.JPEG" alt="A bride looking at the camera." class="lightbox" />
+      </div>
+      <div id="lightbox-modal" class="lightbox-modal">
+        <span id="lightbox-close">&times;</span>
+        <img id="lightbox-image" src="blank" alt="HD version of photo clicked on." />
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div data-include="components/footer.html"></div>
+  </footer>
+  
+  <script src="scripts/include.js"></script>
+</body>
+</html>
