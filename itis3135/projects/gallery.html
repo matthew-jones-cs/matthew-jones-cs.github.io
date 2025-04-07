@@ -18,17 +18,18 @@
     <section>
       <h2>Gallery</h2>
       <p>Explore some of Karen's favorite moments from recent sessions.</p>
-      <div class="gallery_grid">
-        <img src="images/family_1.JPEG" alt="Photo of a family of four." class="lightbox" />
-        <img src="images/family_2.JPEG" alt="Family of five on the ground smiling up at the camera." class="lightbox" />
-        <img src="images/bride_1.JPEG" alt="A bride looking back at the camera (In black an white)." class="lightbox" />
-        <img src="images/flower_1.JPEG" alt="A photo of a flower that is very light pink." class="lightbox" />
-        <img src="images/kids_1.JPEG" alt="Two kids on a sofa, outside." class="lightbox" />
-        <img src="images/bride_2.JPEG" alt="A bride looking at the camera." class="lightbox" />
+      <div class="gallery_grid" id="gallery_grid">
+        <img src="images/family_1.JPEG" alt="Photo of a family of four." class="family_1" id="family_1"/>
+        <img src="images/family_2.JPEG" alt="Family of five on the ground smiling up at the camera." class="family_2" id="family_2"/>
+        <img src="images/bride_1.JPEG" alt="A bride looking back at the camera (In black an white)." class="bride_1" id="bride_1"/>
+        <img src="images/flower_1.JPEG" alt="A photo of a flower that is very light pink." class="flower_1" id="flower_1"/>
+        <img src="images/kids_1.JPEG" alt="Two kids on a sofa, outside." class="kids_1" id="kids_1"/>
+        <img src="images/bride_2.JPEG" alt="A bride looking at the camera." class="bride_2" id="bride_2"/>
       </div>
       <div id="lightbox-modal" class="lightbox-modal">
-        <span id="lightbox-close">&times;</span>
-        <img id="lightbox-image" src="blank" alt="HD version of photo clicked on." />
+        <span id="lightbox-close" class="lightbox-close">&times;</span>
+        <span id="lightbox-next" class="lightbox-next">&gt;</span>
+        <img id="lightbox-image" src="blank" alt="HD version of photo clicked on." class="hd_Image"/>
       </div>
     </section>
   </main>

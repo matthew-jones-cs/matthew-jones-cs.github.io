@@ -4,26 +4,47 @@ const lightboxModal = document.getElementById('lightbox-modal');
 const lightboxImage = document.getElementById('lightbox-image');
 const lightboxClose = document.getElementById('lightbox-close');
 
-if (lightboxImages && lightboxModal){
-  lightboxImages.forEach( (img) => {
-      img.addEventListener('click', () => {
-      lightboxModal.style.display = 'block';
-      lightboxImage.src = img.src.substring(0, img.src.length - 5) + "_HD.JPEG";
-    });
-  });
 
-  lightboxClose.addEventListener('click', () => {
-    lightboxModal.style.display = 'none';
-    lightboxImage.src = '';
-  });
 
-  window.addEventListener('click', (e) => {
-    if (e.target === lightboxModal) {
-      lightboxModal.style.display = 'none';
-      lightboxImage.src = '';
-    }
-  });
+let previous = 0;
+const grid = document.getElementById("gallery_grid");
+const x = document.getElementById("lightbox-close");
+const next = document.getElementById("lightbox-next");
+
+
+const class_ = ["family_1", "family_2", "bride_1", "flower_1", "kids_1", "bride_2"];
+function visability()
+{
+  const t = String(event.target.id);
+
+  if (class_.includes(t))
+  {
+    
+    lightboxImage.style.display = "block";
+    lightboxModal.style.display = "block";
+    lightboxImage.src = event.target.src.substring(0, event.target.src.length - 5) + "_HD.JPEG";
+    
+    previous = class_.indexOf(t) % 6;
+  }
+  else if (t === "lightbox-close")
+  {
+    lightboxImage.style.display = "none";
+    lightboxModal.style.display = "none";
+  }
+  else if (t === "lightbox-next")
+  {
+    lightboxImage.src = "images/" + class_[(previous + 1) % 6] + "_HD.JPEG";
+    previous = (previous + 1) % 6;
+  }
+  else
+  {
+    return;
+  }
 }
+grid.addEventListener("click", visability);
+x.addEventListener("click", visability);
+next.addEventListener("click", visability);
+
 
 
 // Contact form validation
