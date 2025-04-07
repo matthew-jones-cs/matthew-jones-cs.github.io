@@ -18,7 +18,7 @@ header, footer
 a
 {
   text-decoration: none;
-  color: #F1926A;
+  color: #ECAE93;
 }
 
 a:hover
@@ -38,6 +38,11 @@ nav
   margin-left: 10vw;
   margin-right: 10vw;
   justify-content: space-evenly;
+}
+
+.package
+{
+  color: #4F5D75;
 }
 
 main
