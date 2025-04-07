@@ -10,10 +10,13 @@ body
     margin-left: 5vw;
     margin-right: 5vw;
     background-color: #26547c;
-    /*max-width: 1000 0 0 0;
-    margin: 0 auto;*/
 }
 
+main
+{
+    max-width: 1200px;
+    margin: 0, auto;
+}
 
 li
 {
@@ -141,17 +144,59 @@ figcaption
 
 @media (min-width: 600px)
 {
-
+    nav
+    {
+        min-width: 516px;
+        width: 86%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    p
+    {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    li
+    {
+        width: 88%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    li > p
+    {
+        width: 77.44%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media (min-width: 800px)
 {
-    
-}
-
-@media (min-width: 1000px)
-{
-    
+    nav
+    {
+        width: 86%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    p
+    {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    li
+    {
+        width: 88%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    li > p
+    {
+        width: 77.44%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media (min-width: 1200px)
