@@ -110,6 +110,51 @@ table ~ figcaption
     text-align: center;
 }
 
+#defaultDisplay
+{
+    display: block;
+}
+
+
+#slideDisplay
+{
+    display: none;
+}
+
+#next
+{   
+    position: absolute;
+    font-size: 3rem;
+    top: 110px;
+    right: 1.8vw;
+    cursor: pointer;
+}
+
+#previous
+{
+    position: absolute;
+    font-size: 3rem;
+    top: 110px;
+    left: 1.8vw;
+    cursor: pointer;
+}
+
+#out
+{
+    position: absolute;
+    font-size: 3rem;
+    top: 80px;
+    left: calc((100vw / 2) + 250px);
+    cursor: pointer;
+}
+
+.current
+{
+    max-width: none;
+    max-height: none;
+}
+
+
 th, tr, td
 {
     border: 1px solid #ffd166;
