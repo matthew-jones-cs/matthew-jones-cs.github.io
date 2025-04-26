@@ -22,6 +22,7 @@ main
 
 li, ol, ul
 {
+    margin-top: 5px;
     margin-left: 1vw;
     margin-right: 1vw;
 }
@@ -211,6 +212,7 @@ figcaption
     li, ul
     {
         margin: 0;
+        margin-top: 5px;
     }
     ol
     {
@@ -238,6 +240,7 @@ figcaption
     li, ul
     {
         margin: 0;
+        margin-top: 5px;
     }
     ol
     {
@@ -264,6 +267,7 @@ figcaption
     li, ul
     {
         margin: 0;
+        margin-top: 5px;
     }
     ol
     {
@@ -290,6 +294,7 @@ figcaption
     li, ul
     {
         margin: 0;
+        margin-top: 5px;
     }
     ol
     {
