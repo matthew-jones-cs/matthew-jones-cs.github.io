@@ -1,5 +1,5 @@
-const inputObj = document.getElementById(".name");
-const submitButton = document.getElementById(".submit");
+const inputObj = document.getElementById("name");
+const submitButton = document.getElementById("submit");
 
 function encode()
 {
@@ -21,4 +21,5 @@ function encode()
     console.log(encodedInput);
     return encodedInput;
 }
+
 submitButton.addEventListener("click", encode);
