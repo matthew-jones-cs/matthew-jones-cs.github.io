@@ -193,6 +193,32 @@ figcaption
     font-style: italic;
 }
 
+@media (max-width: 600px)
+{
+    nav
+    {
+        min-width: 516px;
+        width: 86%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    p
+    {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    li, ul
+    {
+        margin: 0;
+    }
+    ol
+    {
+        width: 76%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 
 @media (min-width: 600px)
 {
@@ -209,15 +235,13 @@ figcaption
         margin-left: auto;
         margin-right: auto;
     }
-    li, ol, ul
+    li, ul
     {
-        width: 88%;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0;
     }
-    li > p
+    ol
     {
-        width: 77.44%;
+        width: 76%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -237,15 +261,13 @@ figcaption
         margin-left: auto;
         margin-right: auto;
     }
-    li, ol, ul
+    li, ul
     {
-        width: 88%;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0;
     }
-    li > p
+    ol
     {
-        width: 77.44%;
+        width: 76%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -253,31 +275,25 @@ figcaption
 
 @media (min-width: 1200px)
 {
-    body
-    {
-        background-color: #06d6a0;
-    }
     nav
     {
-        width: 1032px;
+        width: calc(1080px * .86);
         margin-left: auto;
         margin-right: auto;
     }
     p
     {
-        width: 960px;
+        width: calc(1080px * .8);
         margin-left: auto;
         margin-right: auto;
     }
-    li, ol, ul
+    li, ul
     {
-        width: 1056px;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0;
     }
-    li > p
+    ol
     {
-        width: calc(1056px * .88);
+        width: calc(960px * .76);
         margin-left: auto;
         margin-right: auto;
     }
