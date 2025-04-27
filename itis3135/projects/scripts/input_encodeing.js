@@ -1,25 +1,36 @@
 const inputObj = document.getElementById("name");
+const inputMessage = document.getElementById("message");
 const submitButton = document.getElementById("submit");
 
 function encode()
 {
-    console.log("hi");
     const dangerCharacters = ["<", ">", "\"", "\\", "\`", "\&", ".", "\$"];
     let temp = "";
-    for (character of inputObj.innerText)
+    for (character of inputObj.value)
     {
         if (dangerCharacters.indexOf(character) >= 0)
         {
-            temp += "%" + dangerCharacters.indexOf(character);
+            temp += "%" + dangerCharacters.indexOf(character) + "%";
         }
         else
         {
             temp += character;
         }
     }
-    const encodedInput = temp;
-    console.log(encodedInput);
-    return encodedInput;
+    inputObj.value = temp;
+    temp = "";
+    for (character of inputMessage.value)
+    {
+        if (dangerCharacters.indexOf(character) >= 0)
+        {
+            temp += "%" + dangerCharacters.indexOf(character) + "%";
+        }
+        else
+        {
+            temp += character;
+        }
+    }
+    inputMessage.value = temp;
 }
 
 submitButton.addEventListener("click", encode);
