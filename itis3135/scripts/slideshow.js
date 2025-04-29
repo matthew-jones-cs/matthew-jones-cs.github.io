@@ -21,19 +21,20 @@ function navigate()
     else if (id === "next")
     {
         const currentImageIndex = parseInt(currentImage.src.substring(currentImage.src.indexOf("image_") + 6, currentImage.src.indexOf(".JPG")));
-        currentImage.src = "images/slideshow_image_"+ ((currentImageIndex + 1) % (imageAmount)) + ".JPG";
+        currentImage.src = "images/slideshow_image_"+ ((currentImageIndex + 1) % (imageAmount)) + "HD.JPG";
+        alert(currentImage.src.document);
     }
     else if (id === "previous")
     {
         const currentImageIndex = parseInt(currentImage.src.substring(currentImage.src.indexOf("image_") + 6, currentImage.src.indexOf(".JPG")));
         
-        if(currentImageIndex === 0)
+        if (currentImageIndex === 0)
         {
-            currentImage.src = "images/slideshow_image_"+ (imageAmount - 1) + ".JPG";
+            currentImage.src = "images/slideshow_image_"+ (imageAmount - 1) + "HD.JPG";
         }
         else
         {
-            currentImage.src = "images/slideshow_image_"+ ((currentImageIndex - 1) % (imageAmount)) + ".JPG";
+            currentImage.src = "images/slideshow_image_"+ ((currentImageIndex - 1) % (imageAmount)) + "HD.JPG";
         }
     }
     else

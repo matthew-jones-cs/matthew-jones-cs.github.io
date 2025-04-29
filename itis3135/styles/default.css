@@ -152,7 +152,7 @@ table ~ figcaption
     position: absolute;
     font-size: 3rem;
     top: 80px;
-    left: calc((100vw / 2) + 250px);
+    right: 10vw;
     cursor: pointer;
 }
 

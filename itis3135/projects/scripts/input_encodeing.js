@@ -30,6 +30,10 @@ function encode()
             temp += character;
         }
     }
+    if (temp !== inputObj.value)
+    {
+        alert("Some of your inputs have been encoded.");
+    }
     inputMessage.value = temp;
 }
 
