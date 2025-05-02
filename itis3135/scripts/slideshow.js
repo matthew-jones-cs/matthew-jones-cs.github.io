@@ -2,7 +2,7 @@ const currentImage = document.getElementById("current");
 const slideNavigation = document.getElementById("slideNavigation");
 const caption = document.getElementById("figCaption");
 const goTo = document.getElementById("imageListContainer");
-const captions = ["M for Mac", "A for Airpod", "T for Time", "T for Time", "H for Hair", "E for Ethernet", "W for Wallet", "J for Jacket", "O for Old Spice", "N for Nintindo", "E for Ear", "S for Slides"];
+const captions = ["M for Mac", "A for Airpod", "T for Time", "T for Time", "H for Hair", "E for Ethernet", "W for Wallet", "J for Jacket", "O for Old Spice", "N for Nintendo", "E for Ear", "S for Slides"];
 
 const imageAmount = 12;
 
