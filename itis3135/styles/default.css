@@ -113,20 +113,20 @@ figcaption
     text-align: center;
 }
 
+#figCaption
+{
+    font-size: 20px;
+}
+
 table ~ figcaption
 {
     text-align: center;
 }
 
-#defaultDisplay
-{
-    display: block;
-}
-
 
 #slideDisplay
 {
-    display: none;
+    display: block;
 }
 
 #next
@@ -158,8 +158,8 @@ table ~ figcaption
 
 .current
 {
-    max-width: none;
-    max-height: none;
+    max-width: 800px;
+    max-height: 800px;
 }
 
 
